@@ -1,0 +1,171 @@
+    @font-face {
+        font-family: "Yandex";
+        src: url(fonts/YandexSansText-Regular.ttf);
+    }
+    
+    * {
+        font-family: "Yandex";
+    }
+    
+    .boldtext {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    
+    .thintext {
+        font-size: 16px;
+        color: #abacb0;
+    }
+    
+    .criteries {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #abacb0;
+        display: flex;
+    }
+    
+    .infimage {
+        margin-left: 20px;
+        width: 20px;
+    }
+    
+    [data-tooltip] {
+        position: relative;
+    }
+    
+    [data-tooltip]::after {
+        text-transform: none;
+        content: attr(data-tooltip);
+        position: absolute;
+        font-size: 16px;
+        width: max-content;
+        left: 0;
+        top: 0;
+        padding: 0.5em;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+        opacity: 0;
+        transition: 0.7s;
+    }
+    
+    [data-tooltip]:hover::after {
+        opacity: 1;
+        top: 2em;
+    }
+    
+    .card {
+        width: fit-content;
+        height: auto;
+        border-color: rgb(171, 172, 176, 0.5);
+        padding: 15px;
+        padding-bottom: 0;
+    }
+    
+    ul {
+        font-weight: 650;
+    }
+    
+    .aim {
+        max-width: 120px;
+        padding: 10px;
+        background: #dfe4f2;
+        border-radius: 4px;
+    }
+    
+    #skills {
+        position: relative;
+        right: 35px;
+    }
+    
+    .tic {
+        width: 20px;
+        display: inline;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .skill {
+        list-style-type: none;
+        display: inline;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .mountain {
+        width: 359px;
+        height: 607px;
+        background-image: url(images/Mountain.svg);
+        background-repeat: no-repeat;
+        display: flex;
+    }
+    
+    .vertline {
+        border-left: 6px solid white;
+        height: 85%;
+        position: relative;
+        left: 49%;
+        top: 14.7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    button {
+        border-radius: 25px;
+        width: max-content;
+        border: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 7px;
+    }
+    
+    .doneLeft {
+        background-color: #46c291;
+        color: black;
+        position: relative;
+        right: 100%;
+    }
+    
+    .doneRight {
+        background-color: #46c291;
+        color: black;
+        position: relative;
+        left: 10px;
+    }
+    
+    .currentLeft {
+        background-color: white;
+        font-weight: bolder;
+        position: relative;
+        right: 100%;
+    }
+    
+    .currentRight {
+        background-color: white;
+        font-weight: bolder;
+        position: relative;
+        left: 10px;
+    }
+    
+    .futureLeft {
+        background-color: white;
+        position: relative;
+        right: 110%;
+    }
+    
+    .futureRight {
+        background-color: white;
+        position: relative;
+        left: 10px;
+    }
+    
+    .flag {
+        width: 30px;
+        float: left;
+    }
+    
+    .donetick {
+        float: left;
+        width: 22px;
+        margin-right: 5px;
+    }
